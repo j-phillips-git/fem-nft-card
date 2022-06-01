@@ -1,0 +1,180 @@
+
+:root {
+    --clr-body-background: #0D192C;
+    --clr-card-background: #15263F;
+    --clr-white: #FFFFFF;
+    --clr-soft-blue: #8BACD9;
+    --clr-teil: #00FFF8;
+    --clr-hr: #2E405A;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--clr-body-background);
+    margin-top: 62px;
+}
+
+h1,
+.creator-name {
+    color: var(--clr-white);
+}
+
+h1,
+.ethereum {
+    font-weight: 600;
+}
+
+p,
+.time-left, 
+.profile-info-container {
+    color: var(--clr-soft-blue);
+}
+
+.ethereum,
+.time-left,
+.profile-info-container {
+    font-size: 15px;
+}
+
+#main-card-img {
+    width: 278px;
+    margin: 24px 0 24px 0;
+    border-radius: 8px;
+}
+
+.eye-icon,
+.shadow-mouseover {
+    display: none;
+}
+
+.card-container {
+    
+    background-color: var(--clr-card-background);
+    padding-bottom: 24px;
+    padding-left: 24px;
+    margin: 0 auto;
+    width: 87.3%;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 1.375rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 26px;
+    width: 75%;
+    margin: 12px 0 16px 0;
+}
+
+.ethereum {
+    color: var(--clr-teil);
+    margin: 6.5px 81px 0 0;
+}
+
+
+#diamond-icon,
+#clock-icon {
+    position: relative;
+    top: 3px;
+    right: 7px;
+    margin-left: 7px;
+}
+
+hr {
+    color: var(--clr-hr);
+    margin: 16px 24px 16px 0;
+}
+
+#profile-picture {
+    width: 33px;
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+}
+
+.profile-info {
+    float: right;
+    margin: 6px 88px 0 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 360px) {
+    #main-card-img {
+        width: 250px;
+    }
+
+    .ethereum {
+        margin: 6.5px 55px 0 0;
+    }
+
+    .card-container {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 400px) {
+    #main-card-img {
+        width: 302px;
+    }
+
+    .card-container {
+        padding-bottom: 32px;
+    }
+
+    p {
+        margin: 16px 0 24px 0;
+    }
+
+    hr {
+        margin: 24px 24px 16px 0;
+    }
+
+    .ethereum,
+    .profile-info {
+        margin: 6px 110px 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .eye-icon-visible {
+        display: block;
+        position: absolute;
+        bottom: calc(100% - 260px);
+        left: calc(50% - 23px);
+    }
+
+    .main-card-img-shadow {
+        display: block;
+        position: absolute;
+        height: 302px;
+        width: 302px;
+        background-color: var(--clr-teil);
+        bottom: calc(100% - 388px);
+        left: calc(50% - 150px);
+        border-radius: 8px;
+        opacity: 50%;
+    }
+
+    h1:hover,
+    .creator-name:hover {
+        color: var(--clr-teil);
+        cursor: pointer;
+    }
+}
