@@ -20,16 +20,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://j-phillips-git.github.io/fem-nft-card/)
 
 ### Built with
 
 - HTML
 - CSS 
+- JavaScript
 
 ## Author
 
